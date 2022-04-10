@@ -22,5 +22,7 @@ function convert() {
 }
 
 function reset() {
-    
+    document.getElementById("fahrenheit").value = 0
+    document.getElementById("celcius").value = 0
+    //document.getElementById("kelvin").value = 0
 }
