@@ -1,24 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
 body{
-background-color: gray;
+background-color: rgb(128, 128, 128);
 
 }
 
 #container{
 display: flex;
-justify-content: center;
 align-items: center;
 width: 500px;
 }
 
-#boxc{
-
-
+.box{
+    background-color: rgb(224, 145, 145);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 50px;
 }
 
 input{
 padding: 10px;
 margin: 5px;
 border-radius: 13px;
+margin-bottom: 10px;
 
 }
 
@@ -29,9 +37,30 @@ button{
 }
 
 #convert{
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
+    margin-right: 10px;
+}
+
+#convert:hover {
+    background-color: rgb(255, 196, 0);
+    cursor: pointer;
 }
 
 #reset{
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#reset:hover {
+    background-color: rgb(129, 6, 6);
+    cursor: pointer;
+}
+
+.namet {
+    margin-bottom: 5px;
+
+}
+
+.titleb {
+    margin-bottom: 20px;
 }
