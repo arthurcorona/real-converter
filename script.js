@@ -24,5 +24,5 @@ function convert() {
 function reset() {
     document.getElementById("fahrenheit").value = ''
     document.getElementById("celcius").value = ''
-    //document.getElementById("kelvin").value = 0
+    //document.getElementById("kelvin").value = ''
 }

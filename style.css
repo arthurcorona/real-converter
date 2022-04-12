@@ -6,7 +6,7 @@
 
 body{
 background-color: rgb(128, 128, 128);
-
+font-family: 'Righteous', cursive;
 }
 
 #container{
@@ -25,9 +25,8 @@ width: 500px;
 input{
 padding: 10px;
 margin: 5px;
-border-radius: 13px;
 margin-bottom: 10px;
-
+width: 85%;
 }
 
 button{
@@ -42,7 +41,7 @@ button{
 }
 
 #convert:hover {
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(150, 123, 34);
     cursor: pointer;
 }
 
