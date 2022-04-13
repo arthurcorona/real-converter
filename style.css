@@ -12,14 +12,13 @@ font-family: 'Righteous', cursive;
 #container{
 display: flex;
 align-items: center;
-width: 500px;
 }
 
 .box{
     background-color: rgb(224, 145, 145);
     border-radius: 15px;
     padding: 20px;
-    margin-left: 50px;
+    margin: 50px;
 }
 
 input{
@@ -35,22 +34,22 @@ button{
     
 }
 
-#convert{
+.convert{
     background-color: rgb(255, 255, 0);
     margin-right: 10px;
 }
 
-#convert:hover {
+.convert:hover {
     background-color: rgb(150, 123, 34);
     cursor: pointer;
 }
 
-#reset{
+.reset{
     background-color: rgb(255, 0, 0);
     color: white;
 }
 
-#reset:hover {
+.reset:hover {  
     background-color: rgb(129, 6, 6);
     cursor: pointer;
 }

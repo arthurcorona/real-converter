@@ -1,28 +1,46 @@
-document.getElementById('convert') = convert
-document.getElementById('reset') = reset
+document.getElementsByClassName('convert') = convert
+document.getElementsByClassName('reset') = reset
+
+//CELCIUS E KELVIN
 
 function convert() {
-    var fahrenheit = document.getElementById('fahrenheit').value
-    var celcius = document.getElementById('celcius').value
-   // var kelvin = document.getElementById('kelvin').value
+    var celciusk = document.getElementById('celciusk').value
+    var kelvinc = document.getElementById('kelvinc').value
 
-    if(fahrenheit === '') {
-        fahrenheit = (parseFloat(celcius) * 1.8) + 32
+    if(celciusk === '') {
+        celciusk = (parseFloat(celciusk) + 273,15) 
     }
-    else if(celcius === ''){
-        celcius = (parseFloat(fahrenheit) - 32) / 1.8
+    else if(kelvinc === ''){
+        kelvinc = (parseFloat(kelvinc) - 32) / 1.8
     }
-  //  else if(kelvin === ''){
-
-  //  }
     
-    document.getElementById("fahrenheit").value = parseFloat(fahrenheit).toFixed(2)
-    document.getElementById("celcius").value = parseFloat(celcius).toFixed(2)
-    //document.getElementById("kelvin").value = parseFloat(kelvin).toFixed(2)
+    document.getElementById("celciusk").value = parseFloat(celciusk).toFixed(2)
+    document.getElementById("kelvinc").value = parseFloat(kelvinc).toFixed(2)
 }
 
 function reset() {
-    document.getElementById("fahrenheit").value = ''
-    document.getElementById("celcius").value = ''
-    //document.getElementById("kelvin").value = ''
+    document.getElementById("celciusk").value = ''
+    document.getElementById("kelvinc").value = ''
+}
+
+//CELCIUS E FAHRENHEIT
+
+function convert() {
+    var fahrenheitc = document.getElementById('fahrenheitc').value
+    var celciusf = document.getElementById('celciusf').value
+
+    if(fahrenheitc === '') {
+        fahrenheitc = (parseFloat(celciusf) * 1.8) + 32
+    }
+    else if(celciusf === ''){
+        celciusf = (parseFloat(fahrenheitc) - 32) / 1.8
+    }
+    
+    document.getElementById("fahrenheitc").value = parseFloat(fahrenheitc).toFixed(2)
+    document.getElementById("celciusf").value = parseFloat(celciusf).toFixed(2)
+}
+
+function reset() {
+    document.getElementById("fahrenheitc").value = ''
+    document.getElementById("celciusf").value = ''
 }
