@@ -1,31 +1,34 @@
-document.getElementsByClassName('convert') = convert
-document.getElementsByClassName('reset') = reset
+//CELCIUS E KELVIN tem q arrumar isso
 
-//CELCIUS E KELVIN
+document.getElementsById('convertck') = convertck
+document.getElementsById('resetck') = resetck
 
-function convert() {
+function convertck() {
     var celciusk = document.getElementById('celciusk').value
     var kelvinc = document.getElementById('kelvinc').value
 
     if(celciusk === '') {
-        celciusk = (parseFloat(celciusk) + 273,15) 
+        kelvinc = (parseFloat(celciusk) + 273.15) 
     }
     else if(kelvinc === ''){
-        kelvinc = (parseFloat(kelvinc) - 32) / 1.8
+        celciusk = (parseFloat(kelvinc) - 273.15) 
     }
     
     document.getElementById("celciusk").value = parseFloat(celciusk).toFixed(2)
     document.getElementById("kelvinc").value = parseFloat(kelvinc).toFixed(2)
 }
 
-function reset() {
+function resetck() {
     document.getElementById("celciusk").value = ''
     document.getElementById("kelvinc").value = ''
 }
 
 //CELCIUS E FAHRENHEIT
 
-function convert() {
+document.getElementsById('convertcf') = convertcf
+document.getElementsById('resetcf') = resetcf
+
+function convertcf() {
     var fahrenheitc = document.getElementById('fahrenheitc').value
     var celciusf = document.getElementById('celciusf').value
 
@@ -40,7 +43,7 @@ function convert() {
     document.getElementById("celciusf").value = parseFloat(celciusf).toFixed(2)
 }
 
-function reset() {
+function resetcf() {
     document.getElementById("fahrenheitc").value = ''
     document.getElementById("celciusf").value = ''
 }

@@ -12,6 +12,7 @@
 <body>
     <div id="container">
 
+    <!--CELCIUS                    E                   KELVIN-->
         <div class="box">
             
             <h2 class="titleb">CELCIUS & KELVIN</h2>   
@@ -22,11 +23,12 @@
                 <input id="kelvinc" type="number" placeholder="Kelvin" value="">
                     <br>
 
-                <button class="convert" onclick="convert()">Convert</button>
-                <button class="reset" onclick="reset()">Reset</button>
+                <button id="convertck" class="convert" onclick="convertck()">Convert</button>
+                <button id="resetck" class="reset" onclick="resetck()">Reset</button>
 
         </div>
 
+    <!--CELCIUS                    E                   FAHRENHEIT-->
         <div class="box">
             
             <h2 class="titleb">CELCIUS & FAHRENHEIT</h2>   
@@ -37,11 +39,12 @@
                 <input id="fahrenheitc" type="number" placeholder="Fahrenheit" value="">
                     <br>
 
-                <button class="convert" onclick="convert()">Convert</button>
-                <button class="reset" onclick="reset()">Reset</button>
+                <button id="convertcf" class="convert" onclick="convertcf()">Convert</button>
+                <button id="resetcf" class="reset" onclick="resetcf()">Reset</button>
 
         </div>
     
+    <!--KELVIN                    E                   FAHRENHEIT-->
         <div class="box">
             
             <h2 class="titleb">KELVIN & FAHRENHEIT</h2>   
@@ -52,8 +55,8 @@
                 <input id="fahrenheitk" type="number" placeholder="Fahrenheit" value="">
                     <br>
 
-                <button class="convert" onclick="convert()">Convert</button>
-                <button class="reset" onclick="reset()">Reset</button>
+                <button id="convertkf" onclick="convertkf()">Convert</button>
+                <button id="resetkf" onclick="resetkf()">Reset</button>
 
         </div>
 
