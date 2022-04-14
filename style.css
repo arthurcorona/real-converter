@@ -21,6 +21,18 @@ align-items: center;
     margin: 50px;
 }
 
+#kf{
+background-color: aqua;
+}
+
+#cf{
+background-color: aquamarine;
+}
+
+#ck{
+background-color: blueviolet;
+}
+
 input{
 padding: 10px;
 margin: 5px;
