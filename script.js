@@ -47,3 +47,29 @@ function resetcf() {
     document.getElementById("fahrenheitc").value = ''
     document.getElementById("celciusf").value = ''
 }
+
+//KELVIN                       E                   FAHRENHEIT
+
+document.getElementById("convertkf") = convertkf
+document.getElementById("resetkf") = resetkf
+
+function convertkf() {
+    var kelvinf = document.getElementById('kelvinf').value
+    var fahrenheitk = document.getElementById('fahrenheitk').value
+
+    if(fahrenheitk === '') {
+        fahrenheitk = (parseFloat(kelvinf - 273.15) * 1.8 + 32)
+    }
+    else if(kelvinf === ''){
+        kelvinf = (parseFloat(fahrenheitk)  )
+    }
+    
+    document.getElementById("kelvinf").value = parseFloat(kelvinf).toFixed(2)
+    document.getElementById("fahrenheitk").value = parseFloat(fahrenheitk).toFixed(2)
+
+}
+
+function resetkf() {
+    document.getElementById("kelvinf").value = ''
+    document.getElementById("fahrenheitk").value = ''
+}
