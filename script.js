@@ -61,7 +61,7 @@ function convertkf() {
         fahrenheitk = (parseFloat(kelvinf - 273.15) * 1.8 + 32)
     }
     else if(kelvinf === ''){
-        kelvinf = (parseFloat(fahrenheitk)  )
+        kelvinf = (parseFloat(fahrenheitk - 32) * 0.556 + 273.15)
     }
     
     document.getElementById("kelvinf").value = parseFloat(kelvinf).toFixed(2)
