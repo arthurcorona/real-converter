@@ -10,7 +10,7 @@ function convertck() {
     if(kelvinc === '') {
         kelvinc = (parseFloat(celciusk) + 273.15) 
     }
-    else if(kelvinc === ''){
+    else if(celciusk === ''){
         celciusk = (parseFloat(kelvinc) - 273.15) 
     }
     
