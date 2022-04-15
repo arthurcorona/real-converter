@@ -1,4 +1,4 @@
-//CELCIUS E KELVIN tem q arrumar isso
+//CELCIUS E KELVIN 
 
 document.getElementsById('convertck') = convertck
 document.getElementsById('resetck') = resetck
@@ -7,7 +7,7 @@ function convertck() {
     var celciusk = document.getElementById('celciusk').value
     var kelvinc = document.getElementById('kelvinc').value
 
-    if(celciusk === '') {
+    if(kelvinc === '') {
         kelvinc = (parseFloat(celciusk) + 273.15) 
     }
     else if(kelvinc === ''){
