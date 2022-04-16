@@ -10,13 +10,17 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <div id="container">
 
-    <!--CELCIUS                    E                   KELVIN-->
-    
+    <div id="top">
+        <h2>Fórmula para converter "a mão" :</h2>
+        <img class="img" src="./assets/formula.jpg">
+    </div>
+
+    <div id="container">
+        
         <div id="ck" class="box">
             
-            <h2 class="titleb">CELCIUS & KELVIN</h2>   
+            <h2 class="titleb">CELCIUS  & <br>  KELVIN</h2>   
                 <h3 class="namet">Celcius</h3>
                 <input id="celciusk" type="number" placeholder="Celcius" value="">
                     <br>
@@ -28,8 +32,6 @@
                 <button id="resetck" class="reset" onclick="resetck()">Reset</button>
 
         </div>
-
-    <!--CELCIUS                    E                   FAHRENHEIT-->
 
         <div id="cf" class="box">
             
@@ -46,8 +48,6 @@
 
         </div>
     
-    <!--KELVIN                    E                   FAHRENHEIT-->
-
         <div id="kf" class="box">
             
             <h2 class="titleb">KELVIN & FAHRENHEIT</h2>   
@@ -62,9 +62,7 @@
                 <button id="resetkf" class="reset" onclick="resetkf()">Reset</button>
 
         </div>
-
     </div>
-
 
     <script src="./script.js"></script>
 </body>
