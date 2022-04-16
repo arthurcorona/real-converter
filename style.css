@@ -26,15 +26,15 @@ align-items: center;
 }
 
 #kf{
-background-color: aqua;
+background-color: rgb(0, 153, 153);
 }
 
 #cf{
-background-color: aquamarine;
+background-color: rgb(0, 197, 13);
 }
 
 #ck{
-background-color: blueviolet;
+background-color: rgb(108, 48, 165);
 }
 
 input{
